@@ -1,0 +1,166 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/><meta name='viewport' content='width=device-width, initial-scale=1'/><meta name='viewport' content='width=device-width, initial-scale=1'/>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Power Star Slaes Netwerk</title>
+    <style>
+        body {
+            background-color: aqua;
+            border: 1px solid black;
+            border-radius: 4px;
+        }
+        
+        h3{font-size: 15px;
+                        background-color: white;
+            width: 65%;
+            display: block;
+            padding: 10px 60px;
+            height: 12px;
+            color: #0000FF;
+            text-align: center;
+            margin:0;
+            
+            
+        }
+            h2{
+            font-size: 30px;
+            text-align: center;
+            color: #666666;
+            padding: 2px 2px;
+            margin:0;}
+        
+        
+        input[type="text"], input[type="password"], input[type="number"] {
+            width: 65%;
+            display: block;
+            box-sizing: border-box;
+            padding: 5px 10px;
+            height: 20px;
+            border: 1px solid white;
+            border-radius: 21px;
+            text-align: center;
+        }
+        
+        label {
+            font-size: 15px;
+            color: black;
+            padding: 7px 10px;
+        }
+        
+        a {
+            font-size: 15px;
+                        background-color: white;
+            width: 65%;
+            display: block;
+            padding: 8px 60px;
+            height: 12px;
+            color: #0000FF;
+            text-decoration: none;
+            text-align: center;
+        }
+        
+        button {
+            font-size: 20px;
+            width: 100%;
+            display: block;
+            padding: 5px 10px;
+            height: 50px;
+            color: #0000FF;
+            border-radius: 10px;
+            text-align: center;
+            background-color: dark;
+        }
+    </style>
+</head>
+<body>
+    <h2>Cultural Work</h2>
+    <h3>Eran Rs;5000</h3>
+    
+    <img src="Clt.jpg"
+        width="342"
+        height="140">
+                <a href="https://www.facebook.com/share/r/15q4NuXxdC/">Facebook</a>
+        
+        <label>Share Post in 6 Public buy & Sale Facebook Groups :</label>
+        
+        <br>
+        <label>Upload all Proof Of Facebook Sharing Screen Shot's:</label>
+        <br>
+        <br>
+        <input type="file" name="Image" id="image-upload-1">
+        <input type="file" name="Image" id="image-upload-2">
+        <input type="file" name="Image" id="image-upload-1">
+        <input type="file" name="Image" id="image-upload-2">
+        <input type="file" name="Image" id="image-upload-3">
+        
+        <input type="file" name="Image" id="image-upload-3">
+        <br>
+        <br>
+        <label>Watch Complete Video :</label>
+        <br>
+        <br>
+        <label>Video code Spelling:</label>
+        <input type="text">
+        <br>
+        <button id="invite-button">Invite 12 Friend</button>
+        <br>
+        <a href="5000.html">Withdrawal Now</a>
+    </form>
+</body>
+</html>
+
+<script>
+// Get all file input elements
+const fileInputs = document.querySelectorAll('input[type="file"]');
+
+// Add event listener to each file input
+fileInputs.forEach((fileInput) => {
+  fileInput.addEventListener('change', (e) => {
+    const fileName = e.target.files[0].name;
+    console.log(`File selected: ${fileName}`);
+  });
+});
+
+// Get all invite buttons
+const inviteButtons = document.querySelectorAll('button[type="Invite"]');
+
+// Add event listener to each invite button
+inviteButtons.forEach((inviteButton) => {
+  inviteButton.addEventListener('click', () => {
+    console.log('Invite button clicked!');
+    // Add functionality to invite friends here
+  });
+});
+
+// Get all withdrawal links
+const withdrawalLinks = document.querySelectorAll('a[href="Withdrawal Money.html"]');
+
+// Add event listener to each withdrawal link
+withdrawalLinks.forEach((withdrawalLink) => {
+  withdrawalLink.addEventListener('click', () => {
+    console.log('Withdrawal link clicked!');
+    // Add functionality to handle withdrawal here
+  });
+});
+
+// Get all share links
+const shareLinks = document.querySelectorAll('a[href^="https://www.facebook.com/share/"]');
+
+// Add event listener to each share link
+shareLinks.forEach((shareLink) => {
+  shareLink.addEventListener('click', () => {
+    console.log('Share link clicked!');
+    // Add functionality to handle share here
+  });
+});
+```
+
+This JavaScript code adds the following functionality:
+
+1. *File Input Handling*: When a user selects a file using the file input element, the code logs the file name to the console.
+2. *Invite Button Handling*: When a user clicks the "Invite" button, the code logs a message to the console. You can add functionality to invite friends here.
+3. *Withdrawal Link Handling*: When a user clicks the "Withdrawal" link, the code logs a message to the console. You can add functionality to handle withdrawal here.
+4. *Share Link Handling*: When a user clicks the "Share" link, the code logs a message to the console. You can add functionality to handle share here.
+
+Note that thi

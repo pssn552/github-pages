@@ -1,0 +1,144 @@
+<meta name='viewport' content='width=device-width, initial-scale=1'/>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration and Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="registration-form">
+                <h2>Registration Form</h2>
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password"><br><br>
+                <label for="confirm-password">Confirm Password:</label>
+                <input type="password" id="confirm-password" name="confirm-password"><br><br>
+                <button id="register-button">Register</button>
+            </form>
+            <form id="login-form">
+                <h2>Login Form</h2>
+                <label for="login-username">Username:</label>
+                <input type="text" id="login-username" name="login-username"><br><br>
+                <label for="login-password">Password:</label>
+                <input type="password" id="login-password" name="login-password"><br><br>
+                <button id="login-button">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.container {
+    max-width: 400px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input[type="text"], input[type="email"], input[type="password"] {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 100%;
+    height: 40px;
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3e8e41;
+}
+```
+
+</style><script>
+// Get the registration form elements
+const registrationForm = document.getElementById('registration-form');
+const usernameInput = document.getElementById('username');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const confirmPasswordInput = document.getElementById('confirm-password');
+const registerButton = document.getElementById('register-button');
+
+// Get the login form elements
+const loginForm = document.getElementById('login-form');
+const loginUsernameInput = document.getElementById('login-username');
+const loginPasswordInput = document.getElementById('login-password');
+const loginButton = document.getElementById('login-button');
+
+// Add event listener to the registration form
+registerButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const username = usernameInput.value.trim();
+    const email = emailInput.value.trim();
+    const password = passwordInput.value.trim();
+    const confirmPassword = confirmPasswordInput.value.trim();
+
+    if (username && email && password && confirmPassword) {
+        if (password === confirmPassword) {
+            // Register user logic here
+            console.log('User registered successfully!');
+        } else {
+            console.log('Passwords do not match!');
+        }
+    } else {
+        console.log('Please fill in all fields!');
+    }
+});
+
+// Add event listener to the login form
+loginButton.addEventListener('click', (e) => {
+    e.preventDefault();
+    const loginUsername = loginUsernameInput.value.trim();
+    const loginPassword = loginPasswordInput.value.trim();
+
+    if (loginUsername && loginPassword) {
+        // Login user logic here
+        console.log('User logged in successfully!');
+    } else {
+        console.log('Please fill in all fields!');
+    }
+});
+```
+
+This code creates a basic</script>
